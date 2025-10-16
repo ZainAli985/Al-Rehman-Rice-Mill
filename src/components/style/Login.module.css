@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.form {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.inputGroup label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.inputGroup input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #0078d4;
+}
+
+.button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0078d4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footerText a {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footerText a:hover {
+  text-decoration: underline;
+}
