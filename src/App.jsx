@@ -5,6 +5,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Login from './components/Auth/Login';
 import Dashboard from './components/Dashboard/Dashboard';
+import StatusBadge from './components/StatusBadge';
+const status = import.meta.env.VITE_STATUS_MESSAGE;
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
 
   return (
     <>
+        <StatusBadge initialMessage={status} />
       <BrowserRouter>
         <Routes>
         <Route path='/' element={<Dashboard/>}/>
