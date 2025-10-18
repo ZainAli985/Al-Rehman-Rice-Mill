@@ -22,13 +22,12 @@ app.use("/api", router);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ✅ Make sure this is AFTER the API routes
 app.use(express.static(path.join(__dirname, "../dist")));
 
-app.get("*", (req, res) => {
+// ✅ FIX: use "/*" instead of "*"
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "../dist", "index.html"));
 });
-
 // Start server
 app.listen(port, () => {
   console.log(`✅ SERVER IS RUNNING ON PORT: ${port}`);
