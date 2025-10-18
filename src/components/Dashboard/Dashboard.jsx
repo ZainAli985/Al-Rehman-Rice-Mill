@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import SideLinks from './SideLinks'
-import AccountsForm from '../ChartOfAccounts/AccountsForm'
+import AccountsForm from '../ChartOfAccounts/AccountsForm.jsx'
 import styles from './Dashboard.module.css'
-import TopMenu from '../ChartOfAccounts/topmenu'
-import AccountsList from '../ChartOfAccounts/AccountsList'
+import AccountsList from '../ChartOfAccounts/AccountsList.jsx'
+import TopMenu from '../ChartOfAccounts/topmenu.jsx'
 
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState("create");
