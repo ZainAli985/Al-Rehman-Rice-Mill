@@ -9,9 +9,9 @@ const SideLinks = () => {
         <h2 className={styles.logo}>WELCOME ALI RAZA</h2>
         <nav className={styles.nav}>
           <ul>
-            <li><Link to="" className={styles.link}>CREATE ACCOUNTS</Link></li>
-            <li><Link to="#" className={styles.link}>GENERAL ENTERIES</Link></li>
-            <li><Link to="#" className={styles.link}>LEDGER</Link></li>
+            <li><Link to="/dashboard" className={styles.link}>CREATE ACCOUNTS</Link></li>
+            <li><Link to="/general-entries" className={styles.link}>GENERAL ENTERIES</Link></li>
+            <li><Link to="/ledger" className={styles.link}>LEDGER</Link></li>
             <li><Link to="#" className={styles.link}>SALES INVOICE</Link></li>
             <li><Link to="#" className={styles.link}>PURCHASE INVOICE</Link></li>
           </ul>

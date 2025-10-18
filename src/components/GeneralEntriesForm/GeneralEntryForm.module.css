@@ -1,0 +1,104 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #444;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00bcd4;
+}
+
+.creditSection {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.creditLine {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.addBtn {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.addBtn:hover {
+  background-color: #009bb3;
+}
+
+.total {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.error {
+  color: #d9534f;
+  text-align: center;
+  font-weight: 500;
+}
+
+.success {
+  color: #28a745;
+  text-align: center;
+  font-weight: 500;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #0069d9;
+}
