@@ -1,34 +1,34 @@
 import express from "express";
 import cors from "cors";
-import path from "path";
-import { fileURLToPath } from "url";
 import router from "../router/router.js";
 import ConnectDB from "../config/dbconnect.js";
+import path from "path";
+import { fileURLToPath } from "url";
+import { Router } from "express";
 
 const app = express();
-const port = process.env.PORT || 3000; // ✅ Use Railway's dynamic port
+const port = process.env.PORT || 3000;
 
-// Connect to DB
-ConnectDB();
-
-// Middlewares
 app.use(cors());
 app.use(express.json());
+ConnectDB();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // API routes
 app.use("/api", router);
 
 // Serve frontend (Vite build)
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 app.use(express.static(path.join(__dirname, "../dist")));
 
-// ✅ FIX: use "/*" instead of "*"
-app.get("/*", (req, res) => {
+// ✅ Express 5-compatible fallback
+const routerFallback = Router();
+routerFallback.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "../dist", "index.html"));
 });
-// Start server
+app.use(routerFallback);
+
 app.listen(port, () => {
-  console.log(`✅ SERVER IS RUNNING ON PORT: ${port}`);
+  console.log(`✅ SERVER RUNNING ON PORT ${port}`);
 });
