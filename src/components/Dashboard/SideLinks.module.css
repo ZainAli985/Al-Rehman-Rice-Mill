@@ -1,5 +1,5 @@
 .dashboard {
-  display: flex;
+  display: inline-flex;
   height: 100vh;
   background-color: #f5f6fa;
   font-family: "Segoe UI", sans-serif;

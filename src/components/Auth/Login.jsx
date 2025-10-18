@@ -23,7 +23,8 @@ const Login = () => {
             });
             if(response.ok){
                 const data = await response.json();
-                console.log(data);
+                const fetchedUser = data.credentials.username;  
+                localStorage.setItem('user',fetchedUser);
                 navigate('/dashboard');
             }
             else{

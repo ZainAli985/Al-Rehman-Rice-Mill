@@ -6,10 +6,10 @@ const SideLinks = () => {
   return (
     <div className={styles.dashboard}>
       <aside className={styles.sidebar}>
-        <h2 className={styles.logo}>Menu</h2>
+        <h2 className={styles.logo}>WELCOME ALI RAZA</h2>
         <nav className={styles.nav}>
           <ul>
-            <li><Link to="#" className={styles.link}>CREATE ACCOUNTS</Link></li>
+            <li><Link to="" className={styles.link}>CREATE ACCOUNTS</Link></li>
             <li><Link to="#" className={styles.link}>GENERAL ENTERIES</Link></li>
             <li><Link to="#" className={styles.link}>LEDGER</Link></li>
             <li><Link to="#" className={styles.link}>SALES INVOICE</Link></li>

@@ -1,0 +1,10 @@
+.dashboard{
+    display: flex;
+}
+.formarea{
+    display: inline-flex;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
