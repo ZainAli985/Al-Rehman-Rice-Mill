@@ -9,6 +9,9 @@ import GeneralEntryForm from './components/GeneralEntriesForm/GeneralEntryForm';
 import GeneralEntriesPage from './components/GeneralEntriesForm/GeneralEntriesPage';
 import AccountsForm from './components/ChartOfAccounts/AccountsForm';
 import LedgerPage from './components/Ledger/LedgerPage';
+import PurchaseInvoiceForm from './components/Invoices/PurchaseInvoiceForm';
+import PurchaseInvoicePage from './components/Invoices/PurchaseInvoicePage';
+import SalesInvoice from './components/Invoices/SalesInvoice';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +25,10 @@ function App() {
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/general-entries' element={<GeneralEntriesPage/>}/>
         <Route path='/ledger' element={<LedgerPage/>}/>
+        <Route path='/purchaseinvoicecreate' element={<PurchaseInvoiceForm/>}/>
+        <Route path="/purchaseinvoicesview" element={<PurchaseInvoicePage />} />
+        <Route path="/salesinvoice" element={<SalesInvoice/>} />
+
 
         </Routes>
       </BrowserRouter>

@@ -12,8 +12,9 @@ const SideLinks = () => {
             <li><Link to="/dashboard" className={styles.link}>CREATE ACCOUNTS</Link></li>
             <li><Link to="/general-entries" className={styles.link}>GENERAL ENTERIES</Link></li>
             <li><Link to="/ledger" className={styles.link}>LEDGER</Link></li>
-            <li><Link to="#" className={styles.link}>SALES INVOICE</Link></li>
-            <li><Link to="#" className={styles.link}>PURCHASE INVOICE</Link></li>
+            <li><Link to="/salesinvoice" className={styles.link}>SALES INVOICE</Link></li>
+            <li><Link to="/purchaseinvoicecreate" className={styles.link}>PURCHASE INVOICE</Link></li>
+            <li><Link to="/purchaseinvoicesview" className={styles.link}>PURCHASE INVOICE VIEW</Link></li>
           </ul>
         </nav>
       </aside>

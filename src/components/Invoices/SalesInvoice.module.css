@@ -1,0 +1,135 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 30px 40px;
+  margin-left: 220px; /* Sidebar width */
+}
+
+.pageTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+/* Form Styling */
+.invoiceForm {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.field input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.submitButton {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #1e40af;
+}
+
+/* Table Styling */
+.tableSection {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.invoiceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.invoiceTable th,
+.invoiceTable td {
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.invoiceTable th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.noData {
+  text-align: center;
+  padding: 15px;
+  color: #9ca3af;
+}
+
+/* Summary Box */
+.summaryBox {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.summaryBox h3 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.summaryBox p {
+  margin: 5px 0;
+  color: #374151;
+  font-size: 0.95rem;
+}
