@@ -24,10 +24,12 @@ app.use("/api", router);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../dist")));
 
-  app.get("*", (req, res) => {
+  // ✅ FIXED universal route
+  app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "../dist", "index.html"));
   });
 }
+
 
 app.listen(port, () => {
   console.log(`✅ Server running on port ${port} in ${process.env.NODE_ENV} mode`);
