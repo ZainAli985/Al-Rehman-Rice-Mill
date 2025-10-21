@@ -24,11 +24,12 @@ app.use("/api", router);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../dist")));
 
-  // ✅ FIXED universal route
-  app.get("/*", (req, res) => {
+  // ✅ Compatible with Express v5
+  app.get("/:path(*)", (req, res) => {
     res.sendFile(path.join(__dirname, "../dist", "index.html"));
   });
 }
+
 
 
 app.listen(port, () => {
